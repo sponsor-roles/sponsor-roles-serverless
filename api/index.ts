@@ -13,11 +13,8 @@ import {
 } from './_util';
 
 export default async (req: VercelRequest, res: VercelResponse) => {
-	if (req.method?.toUpperCase() !== 'POST') {
-		return res.status(405).send({
-			success: false,
-			message: 'Can only POST to this endpoint.',
-		});
+	if (!req.method || req.method?.toUpperCase() !== 'POST') {
+		return res.status(405).send('Can only POST to this endpoint.');
 	}
 	if (!verifyRequest(req)) return res.status(401).send(`Request body digest did not match signature.`);
 	void res.status(200);
