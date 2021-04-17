@@ -1,0 +1,28 @@
+{
+	"compileOnSave": true,
+	"compilerOptions": {
+		"alwaysStrict": true,
+		"lib": ["esnext"],
+		"module": "commonjs",
+		"noUnusedParameters": true,
+		"sourceMap": true,
+		"skipLibCheck": true,
+		"moduleResolution": "node",
+		"noUnusedLocals": true,
+		"removeComments": false,
+		"target": "es2019",
+		"importsNotUsedAsValues": "error",
+		"strictNullChecks": true,
+		"outDir": "dist",
+		"esModuleInterop": true,
+		"experimentalDecorators": true,
+		"emitDecoratorMetadata": true
+	},
+	"exclude": [
+		"node_modules",
+		"tests"
+	],
+	"include": [
+		"api"
+	]
+}
