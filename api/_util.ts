@@ -9,7 +9,7 @@ import {
 	Snowflake,
 } from 'discord-api-types/v8';
 import fetch from 'node-fetch';
-import { URLSearchParams } from 'node:url';
+import { URLSearchParams } from 'url';
 import { META_REGEX } from './_constants';
 import type { GithubFile, GithubGist } from './_types';
 import { Rest } from '@cordis/rest';
