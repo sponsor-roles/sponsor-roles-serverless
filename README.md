@@ -20,7 +20,7 @@ Those environmental variables follow this pattern:
 
 Example:  
 ```
-SPONSOR_ROLES_MDEyOlNwb25zb3JzVGllcjMxNjY2`=587493582638940160
+SPONSOR_ROLES_MDEyOlNwb25zb3JzVGllcjMxNjY2=587493582638940160
 ```
 
 To get the IDs of all your sponsorship tiers, visit https://docs.github.com/en/graphql/overview/explorer, login, then run:
@@ -42,7 +42,7 @@ To get the IDs of all your sponsorship tiers, visit https://docs.github.com/en/g
 
 If you wish to apply the same role to all sponsors regardless of tier, simply omit the `TIER_ID` in the variable.
 ```
-SPONSOR_ROLES_MDEyOlNwb25zb3JzVGllcjMxNjY2`=587493582638940160
+SPONSOR_ROLES=587493582638940160
 ```
 
 ⚠ The catch-all variable and tier-specific variables are mutually exclusive and the catch-all will always take priority.
