@@ -18,7 +18,7 @@ const { GITHUB_WEBHOOK_SECRET, LOG_CHANNEL, DISCORD_TOKEN, DISCORD_GUILD_ID } = 
 const rest = new Rest(DISCORD_TOKEN);
 
 export function verifyRequest(req: VercelRequest) {
-	const sig = Buffer.from(req.headers['X-Hub-Signature-256'] as string);
+	const sig = Buffer.from(req.headers['x-hub-signature-256'] as string);
 	const hmac = createHmac('sha256', GITHUB_WEBHOOK_SECRET);
 	const digest = Buffer.from(`sha256=${hmac.update(req.body).digest('hex')}`, 'utf8');
 	if (sig.length !== digest.length || !timingSafeEqual(digest, sig)) {

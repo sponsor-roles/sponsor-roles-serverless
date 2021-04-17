@@ -67,3 +67,5 @@ dist/
 
 # editor configurations
 .vscode/
+
+.vercel
